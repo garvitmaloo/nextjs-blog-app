@@ -1,0 +1,106 @@
+.container {
+  max-width: 35rem;
+  padding: 2em 0;
+}
+
+.container h1 {
+  text-align: center;
+  margin-bottom: 0.5em;
+}
+
+.container p {
+  text-align: center;
+  margin-bottom: 1.5em;
+}
+
+.form div {
+  position: relative;
+  margin: 1em 0;
+  text-align: center;
+}
+
+.form label {
+  position: absolute;
+  top: -7px;
+  left: 24%;
+  font-size: 12px;
+  padding: 0.15em;
+  background-color: white;
+  color: rgba(128, 128, 128, 0.95);
+}
+
+.form input {
+  width: 20rem;
+  font-size: 16px;
+  padding: 0.8em 0.5em 0.5em;
+  border-radius: 5px;
+  border: 2px solid rgba(128, 128, 128, 0.512);
+  transition: all 200ms ease;
+}
+
+.form input:focus {
+  outline: none;
+  border: 2px solid #264653;
+}
+
+.newsletter-btn {
+  display: block;
+  margin: 0 auto;
+  border: none;
+  border-radius: 4px;
+  background-color: #264653;
+  color: white;
+  padding: 0.5em 1em;
+  cursor: pointer;
+}
+
+.message-box {
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em;
+  margin: 1em auto;
+  width: 65%;
+}
+
+.message-box p {
+  margin: 0;
+}
+
+.message-box i {
+  cursor: pointer;
+  font-size: 22px;
+}
+
+.error {
+  background-color: rgb(255, 211, 211);
+  border: 2px solid rgb(255, 120, 120);
+}
+
+.success {
+  background-color: rgb(198, 255, 198);
+  border: 2px solid rgb(0, 141, 0);
+}
+
+.message-box.error i {
+  color: rgb(255, 90, 90);
+}
+
+.message-box.success i {
+  color: rgb(0, 141, 0);
+}
+
+@media only screen and (max-width: 500px) {
+  .form label {
+    left: 9%;
+  }
+
+  .form input {
+    width: 90%;
+  }
+
+  .message-box {
+    width: 90%;
+  }
+}

@@ -1,0 +1,74 @@
+.comments-form {
+  margin: 2em auto;
+  padding: 1.5em;
+  width: 50rem;
+  background-color: rgba(255, 255, 255, 0.405);
+  border-radius: 5px;
+}
+
+.comments-form h3 {
+  text-align: center;
+  color: rgb(0, 0, 0, 0.7);
+}
+
+.form div {
+  position: relative;
+  margin: 1em 0;
+  text-align: center;
+}
+
+.form label {
+  position: absolute;
+  top: -7px;
+  left: 30%;
+  font-size: 12px;
+  padding: 0.15em;
+  background-color: #fcf3e7;
+  color: rgba(128, 128, 128, 0.95);
+}
+
+.form input,
+.form textarea {
+  width: 20rem;
+  font-family: inherit;
+  font-size: 16px;
+  padding: 0.8em 0.5em 0.5em;
+  border-radius: 5px;
+  border: 2px solid rgba(128, 128, 128, 0.512);
+  transition: all 200ms ease;
+  background-color: transparent;
+}
+
+.form input:focus,
+.form textarea:focus {
+  outline: none;
+  border: 2px solid #264653;
+}
+
+.comments-form button {
+  display: block;
+  margin: 1em auto;
+  border: none;
+  border-radius: 5px;
+  padding: 0.5em 1.25em;
+  font-size: 16px;
+  background-color: #f4a261;
+  color: white;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 500px) {
+  .comments-form {
+    width: 100%;
+    padding: 0.5em;
+  }
+
+  .form label {
+    left: 10%;
+  }
+
+  .form input,
+  .form textarea {
+    width: 90%;
+  }
+}

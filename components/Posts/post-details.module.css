@@ -1,0 +1,91 @@
+.details-container {
+  padding: 1.5em;
+}
+
+.details-container img {
+  width: 100%;
+  aspect-ratio: 3.2/1;
+  height: auto;
+  object-fit: cover;
+  border-radius: 5px;
+  box-shadow: 0 3px 4px -1px rgba(128, 128, 128, 0.645);
+  margin-bottom: 2.5em;
+}
+
+.details-container h2 {
+  margin-bottom: 0.5em;
+  color: rgba(0, 0, 0, 0.699);
+}
+
+.details-container time {
+  display: block;
+  margin-bottom: 1.5em;
+  color: rgba(128, 128, 128, 0.9);
+}
+
+.comments {
+  padding: 1.5em;
+  background-color: antiquewhite;
+  margin-top: 3em;
+  border-radius: 5px;
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.top button {
+  border: none;
+  border-radius: 5px;
+  padding: 0.5em 1.25em;
+  font-size: 16px;
+  background-color: #f4a261;
+  color: white;
+  cursor: pointer;
+}
+
+.top button i {
+  margin-right: 8px;
+}
+
+.comments h3 {
+  color: rgba(0, 0, 0, 0.699);
+}
+
+.comments-card {
+  margin: 1.5em 0;
+  padding: 1.5em;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.405);
+}
+
+.comments-card .name {
+  margin: 0.25em;
+  font-style: italic;
+  color: rgb(139, 139, 139);
+}
+
+@media only screen and (max-width: 500px) {
+  .details-container {
+    padding: 0.5em;
+  }
+
+  .details-container img {
+    margin-bottom: 1.5em;
+    min-height: 15rem;
+  }
+
+  .top {
+    flex-direction: column;
+  }
+
+  .top button {
+    align-self: center;
+  }
+
+  .comments h3 {
+    text-align: center;
+    margin-bottom: 0.5em;
+  }
+}
